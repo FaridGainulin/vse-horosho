@@ -5,8 +5,8 @@
   background-size: cover
 
   &__container
+    position relative
     padding-top 50px
-    padding-bottom 30px
     +above($breakpoints.sm)
       padding-top 120px
 
@@ -18,15 +18,14 @@
     padding 40px 0 67px 0
 
   &__cards
-    +above($breakpoints.sm)
+    width 300px !important
+    +above($breakpoints.xs)
+      width 360px !important
+    +above($breakpoints.lg)
+      width 100% !important
       display: flex
       flex-wrap: wrap
-      row-gap: 50px
-      column-gap: 20px
       justify-content center
-    +above($breakpoints.md)
-      column-gap: 80px
-    +above($breakpoints.lg)
       row-gap: 60px
       column-gap: 440px
 
@@ -57,10 +56,15 @@
     +above($breakpoints.xs)
       left: 142px;
 
-.swiper-about
-  margin: 0 auto
-  width 300px
-  +above($breakpoints.xs)
-    width 360px
-  +above($breakpoints.sm)
-    width 100%
+  &__girl
+    padding-top 20px
+    width 300px
+    height: auto
+    margin: 0 auto
+    +above($breakpoints.lg)
+      width 436px
+      position: absolute
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+

@@ -72,7 +72,7 @@
     background-position: center
     background-size: cover
     position relative
-    overflow: hidden
+    // overflow: hidden
     margin-top 40px
     padding 40px 0 40px 0
     background-color #EDEDED
@@ -93,3 +93,15 @@
     flex-wrap: wrap
     gap 20px
     justify-content center
+
+  &__img-plant
+    width 200px
+    height: auto
+    position: absolute
+    bottom: -139px;
+    right: 3px;
+    +above($breakpoints.xxl)
+      bottom: -121px;
+      right: -221px;
+      width 477px
+      height: 412px

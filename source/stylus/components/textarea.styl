@@ -4,10 +4,25 @@
   padding 30px 20px
   background-color inherit
   width 260px
-  height: 180px
+  height: 140px
+  font-family: "Manrope-Regular"
+  font-weight: 400
+  font-size: 14px;
+  line-height: 140%
   color: black
+  transition border-color 0.3s, box-shadow 0.3s
   &::placeholder
     color: black
+  &:hover
+    border-color #89B906
+  &:focus
+    border-color #89B906
+    box-shadow 0 0 5px rgba(76, 175, 80, 0.5)
+    outline none
+    caret-color: $color-black
+  +above($breakpoints.md)
+    height: 180px
+
   &.error
       border 1px solid $color-error
       color: $color-error

@@ -13,29 +13,39 @@
   font-weight: 700
   font-size: 18px;
   line-height: 120%
+  transition background 0.3s, position 0.3s
   +above($breakpoints.sm)
     height: 100px;
   +above($breakpoints.md)
     height: 120px
 
   &:hover
-    opacity 0.8
+    background: #98cc08
 
   &:active
     top: 3px
 
-  // animation: pulse 4s infinite;
-  // @keyframes pulse {
-  //   0% {
-  //     transform: scale(1);
-  //   }
-  //   50% {
-  //     transform: scale(0.9);
-  //   }
-  //   100% {
-  //     transform: scale(1);
-  //   }
-  // }
+  &::before
+    content: ""
+    position: absolute
+    top: 0;
+    height: 100%;
+    width: 36px;
+    transform: skewX(-45deg)
+    left: -150%
+    pointer-events: none
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 4s infinite ease-in;
+    vendord = official
+    @keyframes flareAnimation {
+      0% {
+          left: -150%;
+      }
+      100% {
+          left: 250%;
+      }
+    }
+
 
 
 .btn-finances
@@ -54,17 +64,38 @@
   font-weight: 700
   font-size: 18px;
   line-height: 140%
+  transition background 0.3s, position 0.3s
   +above($breakpoints.sm)
     height: 60px;
   +above($breakpoints.md)
     height: 80px
 
   &:hover
-    opacity 0.8
+    background: #98cc08
 
   &:active
     top: 3px
 
+  &::before
+    content: ""
+    position: absolute
+    top: 0;
+    height: 100%;
+    width: 36px;
+    transform: skewX(-45deg)
+    left: -150%
+    pointer-events: none
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 4s infinite ease-in;
+    vendord = official
+    @keyframes flareAnimation {
+      0% {
+          left: -150%;
+      }
+      100% {
+          left: 250%;
+      }
+    }
 
 
 .btn-questions
@@ -83,16 +114,38 @@
   font-weight: 700
   font-size: 18px;
   line-height: 140%
+  transition background 0.3s, position 0.3s
   +above($breakpoints.sm)
     height: 60px;
   +above($breakpoints.md)
     height: 80px
 
   &:hover
-    opacity 0.8
+    background: #98cc08
 
   &:active
     top: 3px
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0;
+    height: 100%;
+    width: 36px;
+    transform: skewX(-45deg)
+    left: -150%
+    pointer-events: none
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 4s infinite ease-in;
+    vendord = official
+    @keyframes flareAnimation {
+      0% {
+          left: -150%;
+      }
+      100% {
+          left: 250%;
+      }
+    }
 
 
 .btn-investments
@@ -110,16 +163,38 @@
   font-weight: 700
   font-size: 18px;
   line-height: 140%
+  transition background 0.3s, position 0.3s
   +above($breakpoints.sm)
     height: 60px;
   +above($breakpoints.md)
     height: 100px
 
   &:hover
-    opacity 0.8
+    background: #98cc08
 
   &:active
     top: 3px
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0;
+    height: 100%;
+    width: 36px;
+    transform: skewX(-45deg)
+    left: -150%
+    pointer-events: none
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 4s infinite ease-in;
+    vendord = official
+    @keyframes flareAnimation {
+      0% {
+          left: -150%;
+      }
+      100% {
+          left: 250%;
+      }
+    }
 
 .btn-help
   height: 50px
@@ -137,16 +212,38 @@
   font-weight: 700
   font-size: 18px;
   line-height: 140%
+  transition background 0.3s, position 0.3s
   +above($breakpoints.sm)
     height: 60px;
   +above($breakpoints.md)
     height: 95px
 
   &:hover
-    opacity 0.8
+    background: #98cc08
 
   &:active
     top: 3px
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0;
+    height: 100%;
+    width: 36px;
+    transform: skewX(-45deg)
+    left: -150%
+    pointer-events: none
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 4s infinite ease-in;
+    vendord = official
+    @keyframes flareAnimation {
+      0% {
+          left: -150%;
+      }
+      100% {
+          left: 250%;
+      }
+    }
 
 
 .btn-modal-form
@@ -164,13 +261,35 @@
   font-weight: 700
   font-size: 18px;
   line-height: 140%
+  transition background 0.3s, position 0.3s
   +above($breakpoints.sm)
     height: 45px;
   +above($breakpoints.md)
     height: 50px
 
   &:hover
-    opacity 0.8
+    background: #98cc08
 
   &:active
     top: 3px
+
+  &::before
+    content: ""
+    position: absolute
+    top: 0;
+    height: 100%;
+    width: 36px;
+    transform: skewX(-45deg)
+    left: -150%
+    pointer-events: none
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 4s infinite ease-in;
+    vendord = official
+    @keyframes flareAnimation {
+      0% {
+          left: -150%;
+      }
+      100% {
+          left: 250%;
+      }
+    }

@@ -10,9 +10,11 @@
     text-align: center
 
   &__items
-    width 260px !important
+    width 300px !important
     margin: 0 auto
     padding-bottom 40px
+    +above($breakpoints.xs)
+      width 360px !important
     +above($breakpoints.sm)
       width 100% !important
       display: flex
@@ -28,13 +30,16 @@
   &__item
     margin: 0 auto
     position relative
-    width 260px !important
+    width 300px !important
     height: 180px
     background-color #F3F7FC
     border-radius: 20px
     padding 40px 30px 0 30px
     text-align: center
+    +above($breakpoints.xs)
+      width 360px !important
     +above($breakpoints.sm)
+      width 260px !important
       margin 0
 
   &__item-number
@@ -60,7 +65,9 @@
     color: #fff
     border-radius: 20px
     padding: 48px 0 0 19px
+    text-align: center
     +above($breakpoints.sm)
+      text-align: start
       background-image: url("../images/help-section-img.png")
       background-repeat: no-repeat
       background-position: right bottom
