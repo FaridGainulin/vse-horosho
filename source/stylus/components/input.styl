@@ -1,0 +1,256 @@
+.input-main
+  height: 50px
+  width 100%
+  padding-left: 20px;
+  font-family: "Manrope-Light"
+  font-weight: 300
+  font-size: 14px;
+  line-height: 120%
+  color: $color-green-sub
+  background-color: inherit;
+  border-radius: 100px;
+  border 1px solid $color-green-sub
+  &:focus
+    color: $color-green-sub
+    caret-color: $color-green-sub
+    border 1px solid $color-red
+    ::placeholder
+      color: $color-green-sub
+  &::placeholder
+    color: $color-green-sub
+  +above($breakpoints.sm)
+    height: 60px
+
+  +above($breakpoints.md)
+    height: 70px
+  &.error
+      border 1px solid $color-error
+      color: $color-error
+      &::placeholder
+        color: $color-error
+      &::-ms-input-placeholder
+        color: $color-error
+      animation: shake 0.6s;
+      @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0)
+        }
+        
+        20%, 80% {
+          transform: translate3d(2px, 0, 0)
+        }
+
+        30%, 50%, 70% {
+          transform: translate3d(-4px, 0, 0)
+        }
+
+        40%, 60% {
+          transform: translate3d(4px, 0, 0)
+        }
+      }
+
+.input-finances
+  height: 50px
+  width 100%
+  width: 260px
+  padding-left: 30px;
+  font-family: "Manrope-Regular"
+  font-weight: 400
+  font-size: 18px;
+  line-height: 140%
+  color: $color-white;
+  background-color: inherit
+  border-radius: 100px;
+  border 1px solid $color-white;
+  &:focus
+    color: $color-grey3
+    caret-color: $color-white;
+    border 1px solid $color-white;
+    ::placeholder
+      color: $color-white;
+  &::placeholder
+    color: $color-white;
+  +above($breakpoints.xs)
+    height: 60px
+
+  +above($breakpoints.md)
+    height: 80px
+  &.error
+      border 1px solid $color-error
+      color: $color-error
+      &::placeholder
+        color: $color-error
+      &::-ms-input-placeholder
+        color: $color-error
+      animation: shake 0.6s;
+      @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0)
+        }
+        
+        20%, 80% {
+          transform: translate3d(2px, 0, 0)
+        }
+
+        30%, 50%, 70% {
+          transform: translate3d(-4px, 0, 0)
+        }
+
+        40%, 60% {
+          transform: translate3d(4px, 0, 0)
+        }
+      }
+
+.input-questions
+  height: 50px
+  width 100%
+  width: 260px
+  padding-left: 20px;
+  font-family: "Manrope-Regular"
+  font-weight: 400
+  font-size: 14px;
+  line-height: 140%
+  color: $color-black
+  background-color: inherit
+  border-radius: 100px;
+  border 1px solid $color-black
+  &:focus
+    color: $color-grey3
+    caret-color: $color-black
+    border 1px solid $color-black
+    ::placeholder
+      color: $color-black
+  &::placeholder
+    color: $color-black
+  +above($breakpoints.xs)
+    height: 60px
+
+  +above($breakpoints.md)
+    height: 80px
+  &.error
+      border 1px solid $color-error
+      color: $color-error
+      &::placeholder
+        color: $color-error
+      &::-ms-input-placeholder
+        color: $color-error
+      animation: shake 0.6s;
+      @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0)
+        }
+        
+        20%, 80% {
+          transform: translate3d(2px, 0, 0)
+        }
+
+        30%, 50%, 70% {
+          transform: translate3d(-4px, 0, 0)
+        }
+
+        40%, 60% {
+          transform: translate3d(4px, 0, 0)
+        }
+      }
+
+.input-investments
+  height: 50px
+  width 100%
+  padding-left: 20px;
+  font-family: "Manrope-Regular"
+  font-weight: 400
+  font-size: 12px;
+  line-height: 140%
+  color: #878787
+  background-color: inherit
+  border-radius: 100px;
+  border 1px solid #878787
+  &:focus
+    color: #878787
+    caret-color: #878787
+    border 1px solid #878787
+    ::placeholder
+      color: #878787
+  &::placeholder
+    color: #878787
+  +above($breakpoints.xs)
+    height: 60px
+
+  +above($breakpoints.md)
+    height: 80px
+  &.error
+      border 1px solid $color-error
+      color: $color-error
+      &::placeholder
+        color: $color-error
+      &::-ms-input-placeholder
+        color: $color-error
+      animation: shake 0.6s;
+      @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0)
+        }
+        
+        20%, 80% {
+          transform: translate3d(2px, 0, 0)
+        }
+
+        30%, 50%, 70% {
+          transform: translate3d(-4px, 0, 0)
+        }
+
+        40%, 60% {
+          transform: translate3d(4px, 0, 0)
+        }
+      }
+
+.input-modal-form
+  height: 40px
+  width 100%
+  padding-left: 20px;
+  font-family: "Manrope-Regular"
+  font-weight: 400
+  font-size: 12px;
+  line-height: 140%
+  color: #507408
+  background-color: inherit
+  border-radius: 100px;
+  border 1px solid #507408
+  &:focus
+    color: #507408
+    caret-color: #507408
+    border 1px solid #507408
+    ::placeholder
+      color: #507408
+  &::placeholder
+    color: #507408
+  +above($breakpoints.xs)
+    height: 45px
+
+  +above($breakpoints.md)
+    height: 50px
+  &.error
+      border 1px solid $color-error
+      color: $color-error
+      &::placeholder
+        color: $color-error
+      &::-ms-input-placeholder
+        color: $color-error
+      animation: shake 0.6s;
+      @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0)
+        }
+        
+        20%, 80% {
+          transform: translate3d(2px, 0, 0)
+        }
+
+        30%, 50%, 70% {
+          transform: translate3d(-4px, 0, 0)
+        }
+
+        40%, 60% {
+          transform: translate3d(4px, 0, 0)
+        }
+      }

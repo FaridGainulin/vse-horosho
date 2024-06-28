@@ -1,0 +1,70 @@
+.form-modal
+  &__feedback
+    border-radius: 12px;
+    background: linear-gradient(170deg, #fef6f3 0%, #DFDFDF 100%);
+    color: $color-grey-1
+    padding: 36px 10px 17px 10px;
+    +above($breakpoints.sm)
+      padding: 32px 17px
+    +above($breakpoints.xxl)
+      padding: 40px 32px
+
+  &__info-title
+    font-size: 19px;
+    line-height: normal
+    margin: 0 0 18px 0
+    font-family: "Montserrat-Bold"
+    font-weight: 700
+    +above($breakpoints.sm)
+      font-size: 21px
+      margin: 0 0 20px 0
+    +above($breakpoints.xxl)
+      font-size: 23px
+    br
+      display: block
+
+  &__feedback-item
+    max-width: 255px
+    margin: 0 auto
+    +above($breakpoints.sm)
+      max-width: 280px
+    +above($breakpoints.xxl)
+      max-width: 330px
+
+  &__feedback-input
+    height: 50px
+    margin-bottom: 10px
+    +above($breakpoints.sm)
+      height: 60px
+      margin-bottom: 10px
+    +above($breakpoints.xxl)
+      height: 58px
+      margin-bottom: 14px
+    .input
+      &__field
+        height: 100%
+        border: none
+
+  &__button
+    margin-bottom: 14px
+    .btn
+      height: 50px
+      +above($breakpoints.sm)
+        height: 60px
+      +above($breakpoints.xxl)
+        height: 58px
+
+  &__agree
+    font-size: 10px;
+    line-height: 13px;
+    +above($breakpoints.sm)
+      font-size: 11px;
+      line-height: 13px;
+    +above($breakpoints.md)
+      font-size: 12px;
+      line-height: 14px;
+    +above($breakpoints.xxl)
+      font-size: 13px;
+      line-height: 15px;
+    a
+      text-decoration: underline

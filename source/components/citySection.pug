@@ -1,0 +1,17 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      .city-section__title
+        h3.font-s-50.font-w-inter-bold Сделайте первый шаг
+        h3.font-s-50.font-w-inter-bold к открытию юридического
+        h3.font-s-50.font-w-inter-bold агентства «ВСЕ ХОРОШО»
+      .city-section__inner
+        .city-section__inner-logo
+          include ../components/logo.pug
+        .city-section__inner-text
+          .font-s-24.font-w-regular Проверьте, свободен ли ваш <br> город для работы по франшизе
+      .city-section__bottom
+        form.horizontal-form(data-feedback-form)
+          input.input-finances(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input-finances(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn-finances(type="submit") Проверить

@@ -1,0 +1,66 @@
+.about-section
+  background-image: url("../images/about-section-bg.jpeg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+  &__container
+    padding-top 50px
+    padding-bottom 30px
+    +above($breakpoints.sm)
+      padding-top 120px
+
+  &__title
+    text-align: center
+
+  &__text
+    text-align: center
+    padding 40px 0 67px 0
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-wrap: wrap
+      row-gap: 50px
+      column-gap: 20px
+      justify-content center
+    +above($breakpoints.md)
+      column-gap: 80px
+    +above($breakpoints.lg)
+      row-gap: 60px
+      column-gap: 440px
+
+  &__card
+    width 300px !important
+    height: 340px
+    padding: 21px 10px 61px 10px
+    position relative
+    text-align: center
+    background-color #fff
+    border-radius: 20px
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='rgb(80, 116, 8)' stroke-width='3' stroke-dasharray='10' stroke-dashoffset='1' stroke-linecap='round'/%3e%3c/svg%3e")
+    +above($breakpoints.xs)
+      width 360px !important
+      padding: 21px 18px 61px 18px
+
+  &__card-text
+    padding-bottom 13px
+
+  &__card-num
+    padding-bottom 23px
+    color: #618404
+
+  &__card-img
+    position: absolute
+    top: -28px;
+    left: 111px;
+    +above($breakpoints.xs)
+      left: 142px;
+
+.swiper-about
+  margin: 0 auto
+  width 300px
+  +above($breakpoints.xs)
+    width 360px
+  +above($breakpoints.sm)
+    width 100%

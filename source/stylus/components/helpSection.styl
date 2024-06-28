@@ -1,0 +1,77 @@
+.help-section
+  &__container
+    position relative
+    padding 30px 0
+    +above($breakpoints.sm)
+      padding 120px 0
+
+  &__title
+    padding-bottom 40px
+    text-align: center
+
+  &__items
+    width 260px !important
+    margin: 0 auto
+    padding-bottom 40px
+    +above($breakpoints.sm)
+      width 100% !important
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content center
+      row-gap: 70px
+      column-gap: 40px
+      +above($breakpoints.lg)
+        justify-content flex-start
+
+
+  &__item
+    margin: 0 auto
+    position relative
+    width 260px !important
+    height: 180px
+    background-color #F3F7FC
+    border-radius: 20px
+    padding 40px 30px 0 30px
+    text-align: center
+    +above($breakpoints.sm)
+      margin 0
+
+  &__item-number
+    display: flex
+    justify-content center
+    align-items: center
+    position absolute
+    bottom: -30px
+    left: 50%
+    transform: translateX(-50%)
+    width 60px
+    height: 60px
+    border-radius: 50%
+    background-color #89B906
+    color #fff
+
+  &__card
+    margin: 30px auto
+    width 100%
+    max-width 560px
+    height: 180px
+    background-color #618404
+    color: #fff
+    border-radius: 20px
+    padding: 48px 0 0 19px
+    +above($breakpoints.sm)
+      background-image: url("../images/help-section-img.png")
+      background-repeat: no-repeat
+      background-position: right bottom
+      background-size: auto
+    +above($breakpoints.lg)
+      margin 0
+      position: absolute
+      bottom: 284px
+      right: 0
+
+  &__button
+    padding-top 30px
+    display: flex
+    justify-content center

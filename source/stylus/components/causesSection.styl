@@ -1,0 +1,95 @@
+.causes-section
+  &__container
+    padding 30px 0 135px 0
+    +above($breakpoints.md)
+      padding 120px 0
+
+  &__title
+    text-align: center
+    padding-bottom 20px
+    +above($breakpoints.md)
+      padding-bottom 55px
+
+  &__items
+    +above($breakpoints.sm)
+      display: flex
+      flex-wrap: wrap
+      justify-content center
+      gap 40px
+
+  &__item
+    margin: 0 auto
+    position relative
+    border-radius: 20px
+    width: 300px !important
+    display: flex
+    flex-direction: column
+    gap 10px
+    +above($breakpoints.xs)
+      width: 360px !important
+    +above($breakpoints.sm)
+      margin: 0
+
+  &__img
+    border-radius: 20px
+    width: 300px
+    +above($breakpoints.xs)
+      width: 360px
+
+  &__number
+    display: flex
+    justify-content center
+    align-items: center
+    position: absolute
+    top: 58px;
+    left: -20px;
+    border-radius: 50%
+    width 40px
+    height: 40px
+    background-color #89B906
+    color white
+
+  &__text
+    overflow hidden
+    position relative
+    height: 100%
+    max-height: 220px
+    border-radius: 20px
+    background-color #EDEDED
+    padding 10px 39px 78px 20px
+    display: flex
+    flex-direction: column
+    gap 10px
+
+  &__arms
+    position: absolute
+    bottom: -52px;
+    right: -11px;
+
+  &__questions
+    background-image: url("../images/causes-section-bg1.jpg")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    position relative
+    overflow: hidden
+    margin-top 40px
+    padding 40px 0 40px 0
+    background-color #EDEDED
+    border-radius: 20px
+
+  &__questions-title
+    padding-bottom 40px
+    text-align: center
+
+  &__questions-adaptive
+    display: flex
+    flex-direction: column
+    gap 20px
+
+  &__questions-form
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    gap 20px
+    justify-content center

@@ -1,0 +1,67 @@
+.main-section
+  background-image: url("../images/main-section-bg.jpeg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+  &__container
+    padding: 30px 0 30px 0
+    +above($breakpoints.md)
+      padding: 48px 0 172px 0
+
+  &__inner
+    display: flex
+    flex-direction: column
+    gap 30px
+    align-items: center
+    +above($breakpoints.md)
+      flex-direction: row
+      justify-content space-between
+
+  &__text
+    width 100%
+    max-width: 569px
+    padding-top 30px
+    +above($breakpoints.md)
+      padding-top 0px
+
+  &__title
+    text-align: center
+    +above($breakpoints.md)
+      text-align: start
+
+  &__sub-title
+    padding: 40px 0
+    text-align: center
+    +above($breakpoints.md)
+      text-align: start
+
+  &__form-main
+    margin: 0 auto
+    width 100%
+    max-width: 460px
+    max-height 270px
+    padding: 30px 20px
+    border-radius: 20px
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='20' ry='20' stroke='rgb(80, 116, 8)' stroke-width='3' stroke-dasharray='10' stroke-dashoffset='1' stroke-linecap='round'/%3e%3c/svg%3e")
+    display: flex
+    flex-direction: column
+    gap: 20px
+    +above($breakpoints.md)
+      margin: 0
+
+
+  &__form-adaptive
+    display: flex
+    flex-direction: column
+    gap 20px
+    +above($breakpoints.xs)
+      flex-direction: row
+
+  &__img
+    width 300px
+    height auto
+    border-radius: 20px
+    +above($breakpoints.sm)
+      width 560px
+      height: 678px

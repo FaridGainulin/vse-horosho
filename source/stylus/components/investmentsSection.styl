@@ -1,0 +1,79 @@
+.investments-section
+  position relative
+  background-image: url("../images/investments-section-bg.jpeg")
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  
+  &__container
+    padding 50px 0
+    +above($breakpoints.sm)
+      padding 120px 0
+
+  &__img-plant
+    width 200px
+    height: auto
+    position: absolute
+    top: 0;
+    right: 0;
+    transform: translate(-2%, -99%)
+    +above($breakpoints.xxl)
+      width 477px
+      height: 412px
+
+  &__title
+    text-align: center
+
+  &__text
+    padding 40px 0 70px 0
+
+  &__items
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content center
+      gap 10px
+    +above($breakpoints.md)
+      gap 40px
+
+  &__item
+    margin 0 auto
+    position relative
+    width 100% !important
+    max-width 300px !important
+    border-radius: 20px
+    background-color #fff
+    display: flex
+    flex-direction: column
+    padding-bottom 40px
+    +above($breakpoints.xs)
+      max-width 360px !important
+    +above($breakpoints.sm)
+      margin 0
+
+  &__item-number
+    position: absolute
+    display: flex
+    justify-content center
+    align-items: center
+    background-color #89B906
+    border-radius: 50%
+    color: $color-white
+    width 60px
+    height: 60px
+    top -30px
+    left 50%
+    transform: translateX(-50%)
+
+  &__item-img
+    border-radius: 20px 20px 0 0
+    width 300px
+    height: auto
+    +above($breakpoints.xs)
+      width 360px
+      height: 304px
+
+  &__item-text
+    padding 20px 0
+    text-align: center

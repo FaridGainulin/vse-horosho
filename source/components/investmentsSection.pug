@@ -1,0 +1,28 @@
+section.investments-section
+  .wrapper
+    .investments-section__container
+      img.investments-section__img-plant(src="images/investments-section-plant.png" loading="lazy" width="477" height="412" alt="plant")
+      .investments-section__title
+        h3.font-s-50.font-w-inter-bold Используйте минимальные
+        h3.font-s-50.font-w-inter-bold инвестиции для старта
+        h3.font-s-50.font-w-inter-bold бизнеса — от 887 000 рублей
+        p.investments-section__text Выберите формат франшизы и узнайте точный <br> размер инвестиций и паушального взноса в 1 клик
+      .swiper-about
+        .investments-section__items.swiper-wrapper
+          .investments-section__item.swiper-slide
+            .investments-section__item-number.font-s-26.font-w-bold 1
+            img.investments-section__item-img(src="images/investments-section__img1.jpeg" loading="lazy" width="360" height="304" alt="image")
+            .font-s-22.font-w-extra-bold.color-black.investments-section__item-text 1 менеджер
+            form.vertical-form(data-feedback-form)
+              input.input-investments(type="text" name="name" autocomplete="off" placeholder="Имя")
+              input.input-investments(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="+7 (___) ___-__-__")
+              button.btn-investments(type="submit") Узнать
+          .investments-section__item.swiper-slide
+            .investments-section__item-number.font-s-26.font-w-bold 2
+            img.investments-section__item-img(src="images/investments-section__img2.jpeg" loading="lazy" width="360" height="304" alt="image")
+            .font-s-22.font-w-extra-bold.color-black.investments-section__item-text 2 менеджера
+            form.vertical-form(data-feedback-form)
+              input.input-investments(type="text" name="name" autocomplete="off" placeholder="Имя")
+              input.input-investments(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="+7 (___) ___-__-__")
+              button.btn-investments(type="submit") Узнать
+        .swiper-progress.about-pagination

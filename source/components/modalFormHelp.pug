@@ -1,0 +1,23 @@
+.remodal(data-remodal-id="modal-form-help" data-remodal-options="modifier: modal-scrollable, hashTracking:false")
+  .remodal__feedback.remodal__feedback--cooperation
+    .remodal__feedback-close(data-remodal-action="close" title="Закрыть").tap-color
+      .remodal__feedback-icon
+    .form-modal
+      form.form-modal__feedback(data-feedback-form)
+        .form-modal__info-title Скачайте пример 
+          br.d-block
+          |договора
+        .form-modal__feedback-container
+          .form-modal__feedback-input.form-modal__feedback-item
+            .input-white
+              input.input-modal-form(type="text" name="name" placeholder="Имя")
+          .form-modal__feedback-input.form-modal__feedback-item
+            .input-white
+              input.input-modal-form(type="tel" name="phone" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          .form-modal__button.form-modal__feedback-item
+            button.btn-modal-form(type="submit")
+              span Скачать
+          .form-modal__agree
+            .form-modal__agree-text
+              |Нажимая на кнопку «Скачать», я&nbsp;даю&nbsp;согласие на&nbsp;обработку персональных данных и&nbsp;соглашаюсь с&nbsp;
+              a(href="#" data-remodal-target="privacy").agree-link политикой конфиденциальности

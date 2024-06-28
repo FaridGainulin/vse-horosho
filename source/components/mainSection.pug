@@ -1,0 +1,17 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      .main-section__inner
+        .main-section__text.font-s-50.font-w-inter-bold
+          .main-section__title Зарабатывайте
+          .main-section__title.color-green-sub от 552 000 рублей
+          .main-section__title ежемесячно <br> на самых популярных юридических услугах
+          .main-section__sub-title.font-w-bold.font-s-24.color-grey Узнайте, как открыть бизнес по франшизе «ВСЕ ХОРОШО» всего за 21 день
+          form.main-section__form-main(data-feedback-form)
+            .main-section__form-adaptive
+              input.input-main(type="text" name="name" autocomplete="off" placeholder="Имя")
+              input.input-main(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="+7 (___) ___-__-__")
+            button.btn-main(type="submit") Получить план открытия
+        img.main-section__img(src="images/main-section-image.jpeg" loading="lazy" width="560" height="678" alt="image")
+

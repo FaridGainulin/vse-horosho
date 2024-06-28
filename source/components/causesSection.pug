@@ -1,0 +1,40 @@
+section.causes-section
+  .wrapper
+    .causes-section__container
+      .causes-section__title
+        h3.font-s-50.font-w-inter-bold <mark> 3 причины </mark>  открыть агентство
+        h3.font-s-50.font-w-inter-bold по франшизе «ВСЕ ХОРОШО»
+      .swiper-about
+        .causes-section__items.swiper-wrapper
+          .causes-section__item.swiper-slide
+            img.causes-section__img(src="images/causes-section-img1.jpeg" loading="lazy" width="360" height="160" alt="image")
+            .causes-section__number.font-s-20.font-w-inter-bold 01
+            .causes-section__text
+              img.causes-section__arms(src="images/about-section-arms.svg" loading="lazy" width="121" height="124" alt="arms")
+              .font-s-24.font-w-bold Актуальность
+              .font-s-16.font-w-bold Спрос на услуги банкротства юридических лиц и защите прав дольщиков остается стабильно высоким и только набирает обороты
+          .causes-section__item.swiper-slide
+            img.causes-section__img(src="images/causes-section-img2.jpeg" loading="lazy" width="360" height="160" alt="image")
+            .causes-section__number.font-s-20.font-w-inter-bold 02
+            .causes-section__text
+              img.causes-section__arms(src="images/about-section-arms.svg" loading="lazy" width="121" height="124" alt="arms")
+              .font-s-24.font-w-bold Доступность
+              .font-s-16.font-w-bold Вам не обязательно иметь юридический опыт,нужно будет только продавать услуги агентства и передавать заявки в Головной офис
+          .causes-section__item.swiper-slide
+            img.causes-section__img(src="images/causes-section-img3.jpeg" loading="lazy" width="360" height="160" alt="image")
+            .causes-section__number.font-s-20.font-w-inter-bold 03
+            .causes-section__text
+              img.causes-section__arms(src="images/about-section-arms.svg" loading="lazy" width="121" height="124" alt="arms")
+              .font-s-24.font-w-bold Бизнес-модель
+              .font-s-16.font-w-bold Мы открыли уже 3 филиала и проработали все механизмыработы компании, следуя им, вы точно получите результат
+        .swiper-progress.about-pagination
+      .causes-section__questions
+        .causes-section__questions-title
+          h3.font-s-40.font-w-inter-bold Будем рады ответить на ваши
+          h3.font-s-40.font-w-inter-bold вопросы о работе франшизы
+        form.causes-section__questions-form(data-feedback-form)
+          textarea.textarea-questions(id="multi-line" name="question" rows="4" cols="10" placeholder="Текст вопроса")
+          .causes-section__questions-adaptive
+            input.input-questions(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input-questions(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="+7 (___) ___-__-__")
+          button.btn-questions(type="submit") Задать вопрос
