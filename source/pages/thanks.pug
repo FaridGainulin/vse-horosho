@@ -2,7 +2,11 @@ extends ../layouts/base
 
 block body
   .layout
-      include ../components/header
-      main.main
-        include ../components/thanksSection.pug
-      include ../components/footer
+    .wrapper
+      .thanks-header
+        include ../components/header
+    main.main
+      include ../components/thanksSection.pug
+    .wrapper
+      .thanks-header
+        include ../components/header
