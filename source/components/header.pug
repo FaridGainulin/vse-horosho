@@ -1,11 +1,8 @@
 header.header
   .header__inner
     .header__title.font-s-18 Франшиза юридического агентства <br> по защите должников и дольщиков
-    include ../components/logo.pug
+    .header__logo
+      include ../components/logo.pug
+    img.header__logo-mobile(src="images/logo-mobile.svg" alt="logo" loading="lazy" width="175" height="43")
     .header__connection
       include ../components/phone-number.pug
-
-
-
-
-

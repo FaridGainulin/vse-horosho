@@ -9,6 +9,11 @@
 
   &__text
     padding: 40px 0
+    text-align: center
+    max-width: 300px
+    margin 0 auto
+    +above($breakpoints.sm)
+      max-width: none
 
   &__cards
     +above($breakpoints.sm)
@@ -38,6 +43,9 @@
 
   &__items
     padding-top 30px
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
     +above($breakpoints.md)
       padding-top 60px
 

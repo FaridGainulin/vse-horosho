@@ -35,17 +35,21 @@
       padding-top 0px
       text-align: start
 
-  &__title
-    text-align: center
-    +above($breakpoints.md)
-      text-align: start
+  &__head
+    max-width: 300px
+    margin 0 auto
+    +above($breakpoints.sm)
+      max-width: 460px
+    +above($breakpoints.lg)
+      max-width: none
 
   &__sub-title
     padding: 20px 0
     text-align: center
+    +above($breakpoints.md)
+      text-align: start
     +above($breakpoints.lg)
       padding: 43px 0
-      text-align: start
 
   &__form-main
     margin: 0 auto

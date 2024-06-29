@@ -4,11 +4,12 @@ section.main-section
       include ../components/header.pug
       .main-section__inner
         .main-section__text.font-s-50.font-w-inter-bold
-          h1
-            span.main-section__title Зарабатывайте <br>
-            span.main-section__title.color-green-sub от 552 000 рублей <br>
-            span.main-section__title ежемесячно <br> на самых популярных юридических услугах
-          h2.main-section__sub-title.font-w-bold.font-s-24.color-grey Узнайте, как открыть бизнес по франшизе «ВСЕ ХОРОШО» всего за 21 день
+          .main-section__head
+            h1
+              | Зарабатывайте <br>
+              mark от 552 000 рублей <br>
+              | ежемесячно <br> на самых популярных юридических услугах
+            h2.main-section__sub-title.font-w-bold.font-s-24.color-grey Узнайте, как открыть бизнес по франшизе «ВСЕ ХОРОШО» всего за 21 день
           form.main-section__form-main(data-feedback-form)
             .main-section__form-adaptive
               input.input-main(type="text" name="name" autocomplete="off" placeholder="Имя")
