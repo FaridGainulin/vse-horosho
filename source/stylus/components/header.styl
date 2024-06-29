@@ -3,7 +3,9 @@
     display: flex
     flex-direction: column
     align-items: center
-    gap: 12px
+    gap: 0px
+    +above($breakpoints.md)
+      gap: 12px
 
     +above($breakpoints.md)
       justify-content space-between
@@ -11,5 +13,8 @@
       align-items: center
 
   &__title
-    color $color-grey
-    text-align: center
+    display: none
+    +above($breakpoints.md)
+      display: block
+      color $color-grey
+      text-align: center
